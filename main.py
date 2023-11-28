@@ -137,29 +137,15 @@ async def UsersRecommend( year : int ):
 #Cuarta función
 @app.get("/usersworstdeveloper/{year}", name = "USERSWORSTDEVELOPER")
 async def UsersWorstDeveloper(year: int):
-    # Verificamos si el año está dentro del rango esperado
-    rango_aceptado = range(2010, 2018)
-    if year not in rango_aceptado:
-        return {"message": "Mi base de datos solo tiene registros entre 2010 y 2017"}
+    mascara = (funcion4['release_year'] == year)   
+    df_filtered = funcion4[mascara]
+    developer_counts = df_filtered['developer'].value_counts().head(3)
+ 
+    resultados = []
+    for puesto, (developer, count) in enumerate(developer_counts.items(), start=1):                            
+        resultados.append({f"Puesto {puesto}": developer})
 
-    # Filtramos por comentarios no recomendados y sentiment_analysis negativo
-    df_filtered = funcion4[(funcion4['recommend'] == False) & (funcion4['sentiment_analisis'] == 0)]
-
-    # Filtramos por el año deseado
-    df_filtered_year = df_filtered[df_filtered['release_year'] == year]
-
-    # Si no hay datos para el año, retornamos mensaje
-    if not df_filtered_year.empty:
-        # Obtener los top 3 desarrolladores con menos recomendaciones
-        top_developers = df_filtered_year['developer'].value_counts().head(3).reset_index()
-        top_developers = top_developers.rename(columns={'index': 'Puesto 1', 'developer': 'Desarrollador'})
-
-        # Modificamos la estructura del resultado
-        result = [{"Puesto {}".format(i + 1): desarrollador} for i, desarrollador in enumerate(top_developers['Desarrollador'])]
-    else:
-        result = {"No hay juegos no recomendados para el año {}".format(year)}
-
-    return {'Top 3 de desarrolladoras con juegos MENOS recomendados por usuarios para el año': year, 'Top 3': result}
+    return resultados 
 
 
 
