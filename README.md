@@ -32,16 +32,13 @@ El sistema se estructura en dos etapas principales:
 
 - `Modelos de Recomendación` Se pusieron en práctica al menos uno de dos tipos de sistemas de recomendación: el basado en elementos (ítem-ítem) y el basado en usuarios (usuario-ítem). Estos modelos posibilitan la recomendación de juegos similares, ya sea en función de la similitud entre los elementos o de los usuarios.
 
-### 3. Documentación
+### Documentación
 
-#### Deploy
-https://mayra.onrender.com/docs
+`Deploy` https://mayra.onrender.com/docs
 
-#### Vídeo de presentación del proyecto
+`Vídeo de presentación del proyecto`
 
-
-#### Fuente de Datos
-https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj
+`Fuente de Datos` https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj
 
 ## Autora:
 
