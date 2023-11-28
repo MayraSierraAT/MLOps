@@ -11,7 +11,6 @@ from fastapi.responses import HTMLResponse
 import pandas as pd
 import scipy as sp
 from sklearn.metrics.pairwise import cosine_similarity
-from typing import List
 
 #instanciar la aplicación
 
@@ -137,7 +136,7 @@ async def UsersRecommend( year : int ):
 
 #Cuarta función
 @app.get("/usersworstdeveloper/{year}", name = "USERSWORSTDEVELOPER")
-async def UsersWorstDeveloper(year: int, funcion4: List[pd.DataFrame]):
+async def UsersWorstDeveloper(year: int):
     # Verificamos si el año está dentro del rango esperado
     rango_aceptado = range(2010, 2018)
     if year not in rango_aceptado:
