@@ -20,7 +20,7 @@ El sistema se estructura en dos etapas principales:
 
 ### 1. Ingeniería de Datos y Creación de la API
 
-- `ETL y Feature Engineering` - Extracción, Transformación y Carga : En primer lugar, se llevó a cabo la limpieza y formateo inicial del conjunto de datos para asegurar su correcta interpretación. Posteriormente, se aplicó un análisis de sentimiento mediante procesamiento del lenguaje natural (NLP) para generar la columna 'opinión', lo que permitió mejorar el rendimiento de la API y facilitar el entrenamiento de los modelos de aprendizaje automático.
+- `ETL y Feature Engineering` - Extracción, Transformación y Carga : En primer lugar, se llevó a cabo la limpieza y formateo inicial del conjunto de datos para asegurar su correcta interpretación. Posteriormente, se aplicó un análisis de sentimiento mediante procesamiento del lenguaje natural (NLP) para generar la columna 'sentiment_analysis', lo que permitió mejorar el rendimiento de la API y facilitar el entrenamiento de los modelos de aprendizaje automático.
 
 - `API` con FastAPI: Se ideó y desarrolló una interfaz de programación de aplicaciones (API) utilizando FastAPI, la cual ofrece diversas consultas a los datos disponibles. Esto posibilita obtener información acerca de los desarrolladores, usuarios, géneros y juegos.
 
