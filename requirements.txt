@@ -37,7 +37,7 @@ platformdirs==4.0.0
 prompt-toolkit==3.0.41
 psutil==5.9.6
 pure-eval==0.2.2
-pyarrow==14.0.1
+pyarrow==12.0.1
 pydantic==2.5.2
 pydantic_core==2.14.5
 Pygments==2.17.0
