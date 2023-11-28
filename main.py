@@ -57,7 +57,7 @@ async def incio ():
         </body>
     </html>
     """
-    return HTMLResponse(content=principal)
+    return principal
 
 
 # Antes de la definición de la función
