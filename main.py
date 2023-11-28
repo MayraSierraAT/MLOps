@@ -21,7 +21,7 @@ app = FastAPI()
 funcion1= pd.read_parquet("data/PlayTimeGenre.parquet")
 funcion2= pd.read_parquet("data/UserForGenre.parquet")
 funcion3= pd.read_parquet("data/UsersRecommend.parquet")
-funcion4r= pd.read_parquet("data/UsersWorstDeveloper.parquet")
+funcion4= pd.read_parquet("data/UsersWorstDeveloper.parquet")
 funcion5= pd.read_parquet("data/sentimiento_analisis.parquet")
 modelo= pd.read_parquet("data/modelo_render.parquet")
 
