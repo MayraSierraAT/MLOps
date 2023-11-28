@@ -11,6 +11,7 @@ from fastapi.responses import HTMLResponse
 import pandas as pd
 import scipy as sp
 from sklearn.metrics.pairwise import cosine_similarity
+from typing import List
 
 #instanciar la aplicación
 
