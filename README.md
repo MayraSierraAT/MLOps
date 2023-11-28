@@ -47,5 +47,3 @@ https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj
 
 [![Linkedin: mayrasierraat](https://img.shields.io/badge/-mayrasierraat-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/mayrasierraat/)](https://www.linkedin.com/in/mayrasierraat/)
 [![Gmail: mayrasierraat@gmail.com](https://img.shields.io/badge/Gmail-mayrasierraat@gmail.com-red)](mailto:mayrasierraat@gmail.com)
-
-<font style="vertical-align: inherit;">volver arriba</font>
